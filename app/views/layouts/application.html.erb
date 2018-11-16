@@ -1,15 +1,76 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Foodie</title>
+    <link rel="stylesheet" href="/assets/ionicons.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<!--    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>-->
+    
   </head>
 
   <body>
-    <%= yield %>
-  </body>
+        <header>
+            
+            <nav>
+            
+                <div class="row">
+                
+                    <img src="/assets/img/logo-white.png" alt="Omnifood logo" class="logo">
+                    
+                    <ul class="main-nav">
+                        <li><a href="/static_pages/home">Home</a></li>
+                        <li><a href="/static_pages/menus">Menus</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Log in</a></li>
+                    </ul>
+                    
+                
+                
+                </div>
+            
+            </nav>
+        
+         <%= yield %>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    
+                    </ul>
+                </div>
+            
+            </div>
+            
+            <div class="row">
+                <p>Copyright &copy; 2018 by Foodie.ie. All rights reserved.</p>
+            
+            </div>
+        
+        
+        </footer>
+    
+    
+    </body>
+
 </html>
+
+
