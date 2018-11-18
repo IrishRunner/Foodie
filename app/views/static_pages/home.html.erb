@@ -1,10 +1,8 @@
            <div class="hero-text-box">
-            
-                <h1>Goodbye stress. <br> Hello quick and delicious meals.</h1>
+                <h1>Goodbye stress. <br> Hello quick &amp; delicious meals.</h1>
                 
-                <a class="btn btn-full" href="#">Sign Up</a>
-                <a class="btn btn-ghost" href="/static_pages/menus">Menus</a>
-            
+                <%= link_to "Sign Up", signup_path, class: "btn btn-full" %>
+                <%= link_to "Meals", menus_path, class: "btn btn-ghost" %>
             </div>    
         
         </header>

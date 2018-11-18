@@ -4,4 +4,13 @@ class StaticPagesController < ApplicationController
 
   def menus
   end
+  
+  def contact
+  end
+    
+  def login
+  end
+    
+  def register
+  end
 end
