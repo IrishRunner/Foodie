@@ -687,4 +687,29 @@ Menus
 }
 */
 
+/* 
+=====================
+Profile Page
+=====================
+*/
 
+.profile {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px;
+    display: inline-block;
+}
+ 
+
+/* 
+======================
+SignUp Form
+======================
+*/
+
+.signup-form {
+    border: 2px solid #fff;
+    padding: 10px;
+    display: inline-block;
+    color: #fff;
+}

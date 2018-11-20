@@ -26,10 +26,14 @@
                         <li><%= link_to "Home", home_path %></li>
                         <li><%= link_to "Meals", menus_path %></li>
                         <li><%= link_to "Contact", contact_path %></li>
-                        <li><%= link_to "Log In", '#' %></li>
+                        <% if logged_in? %>
+                            <li><%= link_to "Profile", current_user %></li>
+                            <li><%= link_to "Settings", '#' %></li>
+                            <li><%= link_to "Log out", logout_path, method: :delete %></li>
+                        <% else %>
+                            <li><%= link_to "Log In", login_path %></li>
+                        <% end %>
                     </ul>
-                    
-                
                 
                 </div>
             
@@ -68,7 +72,7 @@
         
         </footer>
     
-    
+        <%= debug(params) if Rails.env.development? %>
     </body>
 
 </html>
