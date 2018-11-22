@@ -1,0 +1,36 @@
+
+<div class="row">
+    <h1>Update Your Profile</h1>
+    <div class="signup-form">
+        <%= form_for(@user) do |f| %>
+            <%= f.label :firstName %>
+            <%= f.text_field :firstName %>
+            
+            <%= f.label :lastName %>
+            <%= f.text_field :lastName %>
+            
+            <%= f.label :address1 %>
+            <%= f.text_field :address1 %>
+            
+            <%= f.label :address2 %>
+            <%= f.text_field :address2 %>
+            
+            <%= f.label :town %>
+            <%= f.text_field :town %>
+            
+            <%= f.label :eircode %>
+            <%= f.text_field :eircode %>
+            
+            <%= f.label :email %>
+            <%= f.email_field :email %>
+            
+            <%= f.label :password %>
+            <%= f.password_field :password %>
+            
+             <%= f.label :password_confirmation, "Confirmation" %>
+            <%= f.password_field :password %>
+            
+            <%= f.submit "Save changes", class: "btn btn-ghost" %>
+        <% end %>
+    </div>
+</div>

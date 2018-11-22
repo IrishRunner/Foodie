@@ -12,7 +12,7 @@ Basic Setup
     box-sizing: border-box;
 }
 
-html {
+body {
     background-color: #fff;
     color: #555;
     font-family: "Lato", "Arial", sans-serif;
@@ -172,8 +172,8 @@ Buttons
 =============================
 */
 
-.btn:link, 
-.btn:visited,
+.mybtn:link, 
+.mybtn:visited,
  input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
@@ -181,11 +181,12 @@ Buttons
     text-decoration: none;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    font-size: 130%;
 }
 
 
-.btn-full:link,
-.btn-full:visited,
+.mybtn-full:link,
+.mybtn-full:visited,
  input[type=submit]{
     background-color: #e67e22;
     border: 1px solid #e67e22;
@@ -194,30 +195,30 @@ Buttons
      
 }
 
-.btn-ghost:link,
-.btn-ghost:visited {
+.mybtn-ghost:link,
+.mybtn-ghost:visited {
     border: 1px solid #e67e22;
     color: #e67e22;
 }
 
-.btn:hover,
-.btn:active,
+.mybtn:hover,
+.mybtn:active,
 input[type=submit]:hover,
 input[type=submit]:active{
     background-color: #cf6d17;
     
 }
 
-.btn-full:hover,
-.btn-full:active {
+.mybtn-full:hover,
+.mybtn-full:active {
     
     border: 1px solid #cf6d17;
     color: #fff;
      
 }
 
-.btn-ghost:hover,
-.btn-ghost:active {
+.mybtn-ghost:hover,
+.mybtn-ghost:active {
     border: 1px solid #cf6d17;
     color: #fff;;
 }
@@ -537,7 +538,7 @@ input[type=checkbox] {
     margin: 10px 5px 10px 0;
 }
 
-.:focus {outline: none;}
+//.:focus {outline: none;}
 
 
 /*
@@ -656,8 +657,8 @@ Menus
 /*    background-color: #9a9595;*/
     background-color: #fff;
     letter-spacing: 1px;
-    line-height: 3rem;
-    height: 3rem;
+    line-height: 4.9rem;
+    height: 4.9rem;
     text-align: center;
     margin-bottom: 12%;
     border: 1px black solid;
@@ -711,5 +712,5 @@ SignUp Form
     border: 2px solid #fff;
     padding: 10px;
     display: inline-block;
-    color: #fff;
+    color: #000;
 }

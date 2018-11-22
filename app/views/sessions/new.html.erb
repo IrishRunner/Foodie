@@ -1,5 +1,5 @@
 
-<div class="row">
+<div class="container">
     <h1>Log in</h1>
     <div class="signup-form">
         <%= form_for(:session, url: login_path) do |f| %>
@@ -11,6 +11,6 @@
             
             <%= f.submit "Log in", class: "btn btn-ghost" %>
         <% end %>
-        <p>New user? <%= link_to "Sign up", signup_path, class: "btn btn-ghost" %></p>
+        <p>New user? <%= link_to "Sign up", signup_path, class: "mybtn mybtn-ghost" %></p>
     </div>
 </div>
