@@ -1,16 +1,18 @@
 
-<div class="container">
-    <h1>Log in</h1>
-    <div class="signup-form">
-        <%= form_for(:session, url: login_path) do |f| %>
-            <%= f.label :email %>
-            <%= f.email_field :email %>
-            
-            <%= f.label :password %>
-            <%= f.password_field :password %>
-            
-            <%= f.submit "Log in", class: "btn btn-ghost" %>
-        <% end %>
-        <p>New user? <%= link_to "Sign up", signup_path, class: "mybtn mybtn-ghost" %></p>
+<div class="container meals-background">
+    <h2>Log in</h2>
+    <div class="login">
+        <div class="signup-form login-box meals-background">
+            <%= form_for(:session, url: login_path) do |f| %>
+                <p><%= f.label :email %></p>
+                <p><%= f.email_field :email %></p>
+                <br> 
+                <p><%= f.label :password %></p>
+                <p><%= f.password_field :password %></p>
+                <p><%= f.submit "Log in", class: "btn btn-ghost mybtn-large" %></p>
+            <% end %>
+            <br> 
+            <p>New user? <%= link_to "Sign up", signup_path, class: "mybtn mybtn-ghost mybtn-small" %></p>
+        </div>
     </div>
 </div>

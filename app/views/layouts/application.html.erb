@@ -17,11 +17,10 @@
     <header> 
         <nav>
             <div class="container">
-                <img src="/assets/img/logo-white.png" alt="Omnifood logo" class="logo">
                 <ul class="main-nav">
                     <li><%= link_to "Home", home_path %></li>
                     <li><%= link_to "Meals", menus_path %></li>
-                    <li><%= link_to "Contact", contact_path %></li>
+                    <li><a href="/home#contact">Contact</a></li>
                     <% if logged_in? %>
                         <li><%= link_to "Profile", current_user %></li>
                         <li><%= link_to "Settings", edit_user_path(current_user) %></li>
@@ -37,29 +36,10 @@
         <%= yield %>
     <footer>
         <div class="container">
-            <div class="col span-1-of-2">
-                <ul class="footer-nav">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">iOS App</a></li>
-                    <li><a href="#">Android App</a></li>
-                </ul>
-            </div>
-            <div class="col span-1-of-2">
-                <ul class="social-links">
-                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">
             <p>Copyright &copy; 2018 by Foodie.ie. All rights reserved.</p>
         </div>
     </footer>
-        <%= debug(params) if Rails.env.development? %>
+        
   </body>
 </html>
 

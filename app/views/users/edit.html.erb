@@ -1,36 +1,36 @@
 
-<div class="row">
-    <h1>Update Your Profile</h1>
-    <div class="signup-form">
+<div class="row meals-background">
+    <h2>Edit Your Profile</h2>
+    <div class="signup-form width">
         <%= form_for(@user) do |f| %>
-            <%= f.label :firstName %>
-            <%= f.text_field :firstName %>
+            <p><%= f.label :firstName %></p>
+            <p><%= f.text_field :firstName %></p>
             
-            <%= f.label :lastName %>
-            <%= f.text_field :lastName %>
+            <p><%= f.label :lastName %></p>
+            <p><%= f.text_field :lastName %></p>
             
-            <%= f.label :address1 %>
-            <%= f.text_field :address1 %>
+            <p><%= f.label :address1 %></p>
+            <p><%= f.text_field :address1 %></p>
             
-            <%= f.label :address2 %>
-            <%= f.text_field :address2 %>
+            <p><%= f.label :address2 %></p>
+            <p><%= f.text_field :address2 %></p>
             
-            <%= f.label :town %>
-            <%= f.text_field :town %>
+            <p><%= f.label :town %></p>
+            <p><%= f.text_field :town %></p>
             
-            <%= f.label :eircode %>
-            <%= f.text_field :eircode %>
+            <p><%= f.label :eircode %></p>
+            <p><%= f.text_field :eircode %></p>
             
-            <%= f.label :email %>
-            <%= f.email_field :email %>
+            <p><%= f.label :email %></p>
+            <p><%= f.email_field :email %></p>
             
-            <%= f.label :password %>
+            <p><%= f.label :password %>
             <%= f.password_field :password %>
             
-             <%= f.label :password_confirmation, "Confirmation" %>
-            <%= f.password_field :password %>
+            <%= f.label :password_confirmation, "Confirmation" %>
+            <%= f.password_field :password %></p>
             
-            <%= f.submit "Save changes", class: "btn btn-ghost" %>
+            <p><%= f.submit "Save changes", class: "mybtn mybtn-ghost mybtn-large" %></p>
         <% end %>
     </div>
 </div>

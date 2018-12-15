@@ -8,13 +8,30 @@ class StaticPagesController < ApplicationController
   def contact
   end
     
-#  def login
-#  end
-    
   def register
   end
     
-  def sample
-      
+  def dukkah
+  end
+    
+  def farro
+  end
+
+  def shrimp 
+  end
+    
+  def pasta
+  end
+ 
+  def noodle
+  end
+
+  def lentils
+  end
+
+  def schnitzel 
+  end
+
+  def jalapeno
   end
 end

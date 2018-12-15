@@ -1,7 +1,8 @@
 
-<div class="row">
-    <h1>Sign Up</h1>
-    <div class="signup-form">
+<div class="row meals-background">
+    
+    <div class="signup-form width">
+       <h2>Sign Up</h2>
         <%= form_for(@user) do |f| %>
             <%= f.label :firstName %>
             <%= f.text_field :firstName %>
@@ -23,14 +24,15 @@
             
             <%= f.label :email %>
             <%= f.email_field :email %>
-            
+            <br> <br>
             <%= f.label :password %>
             <%= f.password_field :password %>
             
              <%= f.label :password_confirmation, "Confirmation" %>
             <%= f.password_field :password %>
-            
-            <%= f.submit "Create my account", class: "btn btn-ghost" %>
+            <br> <br>
+            <%= f.submit "Create my account", class: "mybtn mybtn-ghost mybtn-large" %>
         <% end %>
     </div>
 </div>
+
